@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+.box-profile {
+    background-color: rgb(224, 222, 222);
+    width: 50%;
+    height: 70%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.image-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.image-profile img {
+    margin-top: -100px;
+    width: 190px;
+    height: 190px;
+    border-radius: 70%;
+    transition: opacity 0.3s;
+}
+
+.image-profile img:hover {
+    opacity: 0.8;
+}
+
+
+.input-group {
+    width: 80%; /* Manter a largura como 80% */
+    margin-top: 20px; /* Espaço superior */
+    margin-bottom: 10px; /* Espaço inferior */
+    padding: 0 145px; /* Adicionando padding nas laterais para afastar dos limites */
+}
+
+.input-group input {
+    font-size: 1rem; /* Tamanho de fonte ajustado */
+    height: 60px; /* Altura do input */
+    border-radius: 15px; /* Borda arredondada */
+    padding-left: 10px; /* Adicionando padding interno para o texto não encostar na borda */
+    padding-right: 10px; /* Padding à direita */
+}
+
+
+.edit-save button{
+    background-color: rgb(144, 16, 16);
+}
+
+
+.btn-3 {
+    scale: 0.65;
+    line-height: 1;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: var(--clr);
+    color: #fff;
+    border-radius: 10rem;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 12px 24px 12px 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-3 .button__icon-wrapper {
+    flex-shrink: 0;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    color: var(--clr);
+    background-color: #fff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+  }
+  
+  .btn-3:hover {
+    background-color: #8f44fd;
+  }
+  
+  .btn-3:hover .button__icon-wrapper {
+    color: #8f44fd;
+  }
+  
+  .btn-3 .button__icon-svg--copy {
+    position: absolute;
+    transform: translate(-150%, 150%);
+  }
+  
+  .btn-3:hover .button__icon-svg:first-child {
+    transition: transform 0.3s ease-in-out;
+    transform: translate(150%, -150%);
+  }
+  
+  .btn-3:hover .button__icon-svg--copy {
+    transition: transform 0.3s ease-in-out 0.1s;
+    transform: translate(0);
+  }
+
+
